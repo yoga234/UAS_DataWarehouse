@@ -1,0 +1,6 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/uts_warehouse
+    username: root
+    password:

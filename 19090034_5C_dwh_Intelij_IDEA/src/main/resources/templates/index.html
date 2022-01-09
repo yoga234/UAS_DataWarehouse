@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>WELCOME</h1>
+    <br>
+    <form action="#" th:action="@{/proses}"
+            th:object="${param}" method="post">
+        <label>Tanggal awal</label>
+        <input type="date" id="tglAwal" th:field="*{tglAwal}">
+        <br>
+        <label>Tanggal akhir</label>
+        <input type="date" id="tglAkhir" th:field="*{tglAkhir}">
+        <br>
+        <input type="submit" value="Proses">
+    </form>
+</body>
+</html>
